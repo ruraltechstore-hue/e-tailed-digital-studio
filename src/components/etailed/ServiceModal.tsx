@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 import { ArrowUpRight, Check } from "lucide-react";
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
@@ -20,7 +21,7 @@ export function ServiceModal({ service, open, onOpenChange }: { service: Service
           <ul className="my-9 space-y-4 border-y border-border py-6">
             {service.bullets.map((bullet) => <li key={bullet} className="flex items-center gap-3 text-sm"><Check className="size-4 text-primary" aria-hidden="true" />{bullet}</li>)}
           </ul>
-          <Button asChild variant="default" size="lg" className="w-fit rounded-none px-6 uppercase tracking-[.16em]"><a href="#contact" onClick={() => onOpenChange(false)}>Start a project <ArrowUpRight /></a></Button>
+          <Button asChild variant="default" size="lg" className="w-fit rounded-none px-6 uppercase tracking-[.16em]"><Link to="/contact" onClick={() => onOpenChange(false)}>Start a project <ArrowUpRight /></Link></Button>
         </div>
       </div>
     </DialogContent>

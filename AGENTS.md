@@ -9,4 +9,4 @@
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
 
-- Keep the E-TAILED homepage as one anchor-navigated route with section components under `src/components/etailed`; this preserves the requested single-page experience while keeping sections maintainable.
+- E-TAILED uses separate TanStack routes (/, /services, /about, /process, /contact) reusing section components from `src/components/etailed`; internal navigation uses `<Link>` so each page is shareable and indexable.
