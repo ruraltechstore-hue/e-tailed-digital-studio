@@ -6,9 +6,9 @@ import { Services } from "@/components/etailed/Services";
 export const Route = createFileRoute("/services")({
   head: () => ({ meta: [
     { title: "Services — E-TAILED DIGITAL INDIA" },
-    { name: "description", content: "Brand strategy, identity, web, e-commerce, content and growth services from an independent Indian studio." },
+    { name: "description", content: "Brand, websites, commerce, marketing, CRM and SaaS from an independent Indian studio." },
     { property: "og:title", content: "Services — E-TAILED DIGITAL INDIA" },
-    { property: "og:description", content: "Brand strategy, identity, web, e-commerce, content and growth services from an independent Indian studio." },
+    { property: "og:description", content: "Brand, websites, commerce, marketing, CRM and SaaS from an independent Indian studio." },
     { property: "og:type", content: "website" },
     { name: "twitter:card", content: "summary_large_image" },
   ]}),

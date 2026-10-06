@@ -6,9 +6,9 @@ import { Process } from "@/components/etailed/Process";
 export const Route = createFileRoute("/process")({
   head: () => ({ meta: [
     { title: "Process — E-TAILED DIGITAL INDIA" },
-    { name: "description", content: "Discover, define, create, evolve — how E-TAILED DIGITAL INDIA works with ambitious brands." },
+    { name: "description", content: "A clear four-step process for ambitious brands." },
     { property: "og:title", content: "Process — E-TAILED DIGITAL INDIA" },
-    { property: "og:description", content: "Discover, define, create, evolve — how E-TAILED DIGITAL INDIA works with ambitious brands." },
+    { property: "og:description", content: "A clear four-step process for ambitious brands." },
     { property: "og:type", content: "website" },
     { name: "twitter:card", content: "summary_large_image" },
   ]}),

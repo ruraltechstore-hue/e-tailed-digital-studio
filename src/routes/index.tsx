@@ -11,9 +11,9 @@ import { Footer } from "@/components/etailed/Footer";
 export const Route = createFileRoute("/")({
   head: () => ({ meta: [
     { title: "E-TAILED DIGITAL INDIA — Independent Digital Studio" },
-    { name: "description", content: "Brand strategy, identity, digital experiences and growth systems for ambitious businesses in India." },
+    { name: "description", content: "Brand, digital products and growth for ambitious businesses in India." },
     { property: "og:title", content: "E-TAILED DIGITAL INDIA — Independent Digital Studio" },
-    { property: "og:description", content: "Strategy, design and technology for brands ready to become more." },
+    { property: "og:description", content: "Brand, digital products and growth for ambitious businesses." },
     { property: "og:type", content: "website" },
     { name: "twitter:card", content: "summary_large_image" },
   ]}),
