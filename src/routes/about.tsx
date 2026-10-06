@@ -6,9 +6,9 @@ import { About } from "@/components/etailed/About";
 export const Route = createFileRoute("/about")({
   head: () => ({ meta: [
     { title: "About — E-TAILED DIGITAL INDIA" },
-    { name: "description", content: "An independent studio combining local intelligence with a global creative standard." },
+    { name: "description", content: "An independent studio combining local insight with global craft." },
     { property: "og:title", content: "About — E-TAILED DIGITAL INDIA" },
-    { property: "og:description", content: "An independent studio combining local intelligence with a global creative standard." },
+    { property: "og:description", content: "An independent studio combining local insight with global craft." },
     { property: "og:type", content: "website" },
     { name: "twitter:card", content: "summary_large_image" },
   ]}),
