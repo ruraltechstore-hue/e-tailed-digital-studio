@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowUp, Instagram, Facebook, Youtube, Linkedin, Twitter } from "lucide-react";
+import logo from "@/assets/logo.jpg";
 
 export function Footer() {
   const scrollToTop = () => {
@@ -15,9 +16,12 @@ export function Footer() {
           
           {/* Column 1: Brand & Description */}
           <div className="flex flex-col lg:pr-8">
-            <h4 className="text-2xl font-serif italic text-white mb-2">
-              Etailed Digital India
-            </h4>
+            <div className="flex items-center gap-3 mb-2">
+              <img src={logo} alt="E-Tailed Logo" className="w-8 h-8 md:w-10 md:h-10 rounded-md object-contain shadow-md shrink-0" />
+              <h4 className="text-2xl font-serif italic text-white">
+                Etailed Digital India
+              </h4>
+            </div>
             <p className="text-[10px] uppercase tracking-widest text-white/50 mb-6 font-semibold">
               by Etailed Digital Services Pvt. Ltd.
             </p>
