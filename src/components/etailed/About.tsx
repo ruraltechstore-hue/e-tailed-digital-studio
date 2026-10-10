@@ -57,23 +57,23 @@ export function About() {
                 <div className="grid grid-cols-2 gap-y-8 md:gap-y-12">
                   {/* Item 1 */}
                   <div className="pr-4 md:pr-10 flex flex-col">
-                    <span className="text-3xl md:text-5xl font-serif italic text-primary mb-1 md:mb-2">50+</span>
-                    <span className="text-[10px] md:text-xs uppercase tracking-[0.2em] text-muted-foreground font-semibold">SaaS Products</span>
+                    <span className="text-3xl md:text-5xl font-serif italic font-bold text-primary mb-1 md:mb-2">50+</span>
+                    <span className="text-[10px] md:text-xs uppercase tracking-[0.2em] text-muted-foreground font-bold">SaaS Products</span>
                   </div>
                   {/* Item 2 */}
                   <div className="pl-6 md:pl-10 flex flex-col">
-                    <span className="text-3xl md:text-5xl font-serif italic text-primary mb-1 md:mb-2">8</span>
-                    <span className="text-[10px] md:text-xs uppercase tracking-[0.2em] text-muted-foreground font-semibold">Service Categories</span>
+                    <span className="text-3xl md:text-5xl font-serif italic font-bold text-primary mb-1 md:mb-2">8</span>
+                    <span className="text-[10px] md:text-xs uppercase tracking-[0.2em] text-muted-foreground font-bold">Service Categories</span>
                   </div>
                   {/* Item 3 */}
                   <div className="pr-4 md:pr-10 flex flex-col">
-                    <span className="text-3xl md:text-5xl font-serif italic text-primary mb-1 md:mb-2">3&times;</span>
-                    <span className="text-[10px] md:text-xs uppercase tracking-[0.2em] text-muted-foreground font-semibold">Avg Lead Growth</span>
+                    <span className="text-3xl md:text-5xl font-serif italic font-bold text-primary mb-1 md:mb-2">3&times;</span>
+                    <span className="text-[10px] md:text-xs uppercase tracking-[0.2em] text-muted-foreground font-bold">Avg Lead Growth</span>
                   </div>
                   {/* Item 4 */}
                   <div className="pl-6 md:pl-10 flex flex-col">
-                    <span className="text-3xl md:text-5xl font-serif italic text-primary mb-1 md:mb-2">24/7</span>
-                    <span className="text-[10px] md:text-xs uppercase tracking-[0.2em] text-muted-foreground font-semibold">Support</span>
+                    <span className="text-3xl md:text-5xl font-serif italic font-bold text-primary mb-1 md:mb-2">24/7</span>
+                    <span className="text-[10px] md:text-xs uppercase tracking-[0.2em] text-muted-foreground font-bold">Support</span>
                   </div>
                 </div>
               </div>

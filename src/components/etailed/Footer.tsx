@@ -29,19 +29,19 @@ export function Footer() {
               Accelerating business growth with digital marketing, custom SaaS products, and automation solutions across India.
             </p>
             <div className="flex flex-wrap gap-5 text-white/80 mt-2">
-              <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram" className="hover:text-white transition-colors">
+              <a href="https://www.instagram.com/etailedindia/?hl=en" target="_blank" rel="noreferrer" aria-label="Instagram" className="hover:text-white transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook" className="hover:text-white transition-colors">
+              <a href="https://www.facebook.com/etaileddigital?rdid=4vI4P5pCE8WVz9GY&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17fbyxSaVE%2F#" target="_blank" rel="noreferrer" aria-label="Facebook" className="hover:text-white transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noreferrer" aria-label="YouTube" className="hover:text-white transition-colors">
+              <a href="https://www.youtube.com/@etaileddigitalindia9259?si=vJUc1Gs2YfhZKZoK" target="_blank" rel="noreferrer" aria-label="YouTube" className="hover:text-white transition-colors">
                 <Youtube className="w-5 h-5" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/company/etailed-digital-services-private%C2%A0limited" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="hover:text-white transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noreferrer" aria-label="Twitter/X" className="hover:text-white transition-colors">
+              <a href="https://x.com/ETailedIndia" target="_blank" rel="noreferrer" aria-label="Twitter/X" className="hover:text-white transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
             </div>
