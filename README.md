@@ -40,25 +40,20 @@ Use real Unsplash images with dark overlays
 
 No card-grid/template aesthetic; use large typography, hairlines, whitespace and editorial layouts.
 
-Use the exact service names, descriptions, bullets, text, colors, spacing, interactions, links and section structure from the full brief. Keep services in one data array and components cleanly separated (Nav, Hero, Marquee, Services, ServiceModal, About, Process, Contact, Footer).
-
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/a39d1a9e-b471-4b55-94d8-0ae18518e793).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
 ## Development
 
 Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+npm install
 npm run dev
 ```
+
+### Scripts
+
+- `npm run dev`: Start local development server
+- `npm run build`: Production build with Vite and Nitro
+- `npm run preview`: Preview production build
+- `npm run lint`: Run ESLint checks
+- `npm run format`: Format code with Prettier
+- `npm test`: Run test suite with Vitest

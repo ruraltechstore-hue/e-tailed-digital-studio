@@ -1,17 +1,35 @@
-import { QueryClient } from "@tanstack/react-query";
-import { createRouter, rootRouteId } from "@tanstack/react-router";
+import { render, screen } from "@testing-library/react";
+import { MemoryRouter } from "react-router-dom";
 import { describe, expect, it } from "vitest";
+import App from "@/App";
 
-import { routeTree } from "@/routeTree.gen";
-
-// Match routes without running loaders or rendering: loaders may need a server or
-// network the test run lacks, and jsdom never loads the stylesheets React waits on.
 describe("App routing", () => {
-  it("matches a page for / instead of falling back to not found", () => {
-    const router = createRouter({ routeTree, context: { queryClient: new QueryClient() } });
+  const routes = [
+    { path: "/", expectedText: "E-TAILED Digital India" },
+    { path: "/services", expectedText: "Professional Ecosystem" },
+    { path: "/about", expectedText: "About" },
+    { path: "/partner", expectedText: "Partner With Us" },
+    { path: "/careers", expectedText: "Want to Be a" },
+    { path: "/faq", expectedText: "Frequently Asked" },
+    { path: "/contact", expectedText: "Email" },
+    { path: "/privacy-policy", expectedText: "Privacy Policy" },
+    { path: "/terms-conditions", expectedText: "Terms & Conditions" },
+    { path: "/refund-policy", expectedText: "Refund Policy" },
+    { path: "/shipping-policy", expectedText: "Shipping Policy" },
+    { path: "/disclaimer", expectedText: "Disclaimer" },
+    { path: "/cookie-policy", expectedText: "Cookie Policy" },
+    { path: "/unknown-route", expectedText: "404" },
+  ];
 
-    const matches = router.matchRoutes("/");
-
-    expect(matches.at(-1)?.routeId).not.toBe(rootRouteId);
+  routes.forEach(({ path, expectedText }) => {
+    it(`renders content for route ${path}`, async () => {
+      render(
+        <MemoryRouter initialEntries={[path]}>
+          <App />
+        </MemoryRouter>,
+      );
+      const elements = await screen.findAllByText(new RegExp(expectedText, "i"));
+      expect(elements.length).toBeGreaterThan(0);
+    });
   });
 });

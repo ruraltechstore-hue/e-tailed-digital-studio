@@ -1,14 +1,6 @@
-<!-- LOVABLE:BEGIN -->
+# Architecture & Project Guidelines
 
-> [!IMPORTANT]
-> This project is connected to [Lovable](https://lovable.dev). Avoid rewriting
-> published git history — force pushing, or rebasing/amending/squashing commits
-> that are already pushed — as it rewrites history on Lovable's side and the
-> user will likely lose their project history.
->
-> Commits you push to the connected branch sync back to Lovable and show up in
-> the editor, so keep the branch in a working state.
-
-<!-- LOVABLE:END -->
-
-- E-TAILED uses separate TanStack routes (/, /services, /about, /process, /contact) reusing section components from `src/components/etailed`; internal navigation uses `<Link>` so each page is shareable and indexable.
+- E-TAILED is a frontend-only React + Vite Single Page Application (SPA) using `react-router-dom`.
+- Pages are organized in `src/pages/` (`/`, `/services`, `/about`, `/partner`, `/careers`, `/faq`, `/contact`, and policy pages), reusing section components from `src/components/etailed`.
+- Internal navigation uses `<Link>` and `<NavLink>` from `react-router-dom`.
+- All styles leverage Tailwind CSS v4 with design tokens defined in `src/styles.css`.

@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { ArrowDown, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/etailed-hero.jpg";
@@ -23,10 +23,9 @@ export function Hero() {
         />
         <div className="absolute inset-0 bg-black/10" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent pointer-events-none" />
-        
+
         {/* Content */}
         <div className="relative z-10 mx-auto w-full max-w-screen-2xl px-5 pb-12 sm:px-8 sm:pb-16 lg:px-12 flex flex-col">
-          
           <div className="flex flex-col items-center text-center w-full mb-16 md:mb-24">
             <h1
               id="hero-title"
@@ -59,7 +58,11 @@ export function Hero() {
           </div>
 
           <div className="hero-enter flex flex-col md:flex-row items-center justify-center gap-4 w-full">
-            <Button asChild size="lg" className="rounded-none uppercase tracking-[.14em] bg-white text-[#111329] hover:bg-white/90">
+            <Button
+              asChild
+              size="lg"
+              className="rounded-none uppercase tracking-[.14em] bg-white text-[#111329] hover:bg-white/90"
+            >
               <Link to="/services">
                 Explore Us <ArrowDown className="ml-2 size-4" />
               </Link>

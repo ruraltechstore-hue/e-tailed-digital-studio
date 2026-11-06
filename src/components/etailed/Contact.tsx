@@ -19,7 +19,7 @@ export function Contact() {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: {
-          "Accept": "application/json"
+          Accept: "application/json",
         },
         body: formData,
       });
@@ -40,7 +40,6 @@ export function Contact() {
   return (
     <section className="relative w-full min-h-[90vh] bg-[#111329] text-white flex items-center justify-center pt-32 pb-24 px-5 sm:px-8 lg:px-12">
       <div className="mx-auto w-full max-w-screen-xl grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start pt-8">
-        
         {/* Left Side: Header Content */}
         <div className="flex flex-col text-left w-full mt-4 lg:mt-12">
           <Reveal>
@@ -60,9 +59,11 @@ export function Contact() {
         <div className="w-full">
           <Reveal delay={100}>
             <form onSubmit={handleSubmit} className="flex flex-col w-full">
-              
               <div className="flex flex-col gap-2 border-b border-white/20 py-6 focus-within:border-white transition-colors">
-                <label htmlFor="name" className="text-xs font-bold uppercase tracking-widest text-white/60">
+                <label
+                  htmlFor="name"
+                  className="text-xs font-bold uppercase tracking-widest text-white/60"
+                >
                   Name
                 </label>
                 <input
@@ -75,7 +76,10 @@ export function Contact() {
               </div>
 
               <div className="flex flex-col gap-2 border-b border-white/20 py-6 focus-within:border-white transition-colors">
-                <label htmlFor="email" className="text-xs font-bold uppercase tracking-widest text-white/60">
+                <label
+                  htmlFor="email"
+                  className="text-xs font-bold uppercase tracking-widest text-white/60"
+                >
                   Email
                 </label>
                 <input
@@ -88,7 +92,10 @@ export function Contact() {
               </div>
 
               <div className="flex flex-col gap-2 border-b border-white/20 py-6 focus-within:border-white transition-colors">
-                <label htmlFor="phone" className="text-xs font-bold uppercase tracking-widest text-white/60">
+                <label
+                  htmlFor="phone"
+                  className="text-xs font-bold uppercase tracking-widest text-white/60"
+                >
                   Phone
                 </label>
                 <input
@@ -100,7 +107,10 @@ export function Contact() {
               </div>
 
               <div className="flex flex-col gap-2 border-b border-white/20 py-6 focus-within:border-white transition-colors">
-                <label htmlFor="message" className="text-xs font-bold uppercase tracking-widest text-white/60">
+                <label
+                  htmlFor="message"
+                  className="text-xs font-bold uppercase tracking-widest text-white/60"
+                >
                   Message
                 </label>
                 <textarea
@@ -131,11 +141,9 @@ export function Contact() {
                   </p>
                 )}
               </div>
-              
             </form>
           </Reveal>
         </div>
-
       </div>
     </section>
   );

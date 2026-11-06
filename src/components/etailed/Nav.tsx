@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link, NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -29,21 +29,31 @@ export function Nav() {
           onClick={close}
           className="z-50 flex items-center gap-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring mr-auto"
         >
-          <img src={logo} alt="E-Tailed Digital India Logo" className="w-8 h-8 rounded-md object-contain shrink-0 shadow-md" />
+          <img
+            src={logo}
+            alt="E-Tailed Digital India Logo"
+            className="w-8 h-8 rounded-md object-contain shrink-0 shadow-md"
+          />
           <span className="text-sm font-semibold uppercase tracking-[.18em] whitespace-nowrap drop-shadow-md">
             E-TAILED Digital India
           </span>
         </Link>
-        <nav aria-label="Primary navigation" className="hidden items-center gap-6 lg:gap-9 md:flex mr-6 lg:mr-8">
+        <nav
+          aria-label="Primary navigation"
+          className="hidden items-center gap-6 lg:gap-9 md:flex mr-6 lg:mr-8"
+        >
           {links.map((link) => (
-            <Link
+            <NavLink
               key={link.to}
               to={link.to}
-              activeProps={{ className: "text-foreground" }}
-              className="nav-link text-[12px] lg:text-[13px] font-medium tracking-wide text-muted-foreground whitespace-nowrap transition-colors"
+              className={({ isActive }) =>
+                `nav-link text-[12px] lg:text-[13px] font-medium tracking-wide whitespace-nowrap transition-colors ${
+                  isActive ? "text-foreground font-semibold" : "text-muted-foreground"
+                }`
+              }
             >
               {link.label}
-            </Link>
+            </NavLink>
           ))}
         </nav>
 
